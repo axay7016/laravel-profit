@@ -1,0 +1,74 @@
+#leftColumn {
+    width: 652px;
+    position: relative;
+    float: left;
+}
+#leftColumn, #leftColumnWide, #rightColumn, #rightColumnWide {
+    margin-top: 16px;
+}
+.relativeAttr {
+    position: relative;
+}
+.float_lang_base_1 {
+    float: left;
+}
+.overViewBox {
+    position: relative;
+}
+
+.overViewBox .instrumentDataFlex {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: space-between;
+    -ms-flex-pack: space-between;
+    -webkit-justify-content: space-between;
+    justify-content: space-between;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    -webkit-align-items: flex-start;
+    align-items: flex-start;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #dadada;
+    margin-bottom: 8px;
+}
+.overViewBox .left, .overViewBox .current-data {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    -webkit-align-items: flex-start;
+    align-items: flex-start;
+    flex: 1;
+    padding: 5px 5px 2px 0;
+}
+.overViewBox .left>DIV, .overViewBox .current-data>DIV {
+    display: inline-block;
+    vertical-align: top;
+}
+.downArrow {
+    background-image: URL("https://i-invdn-com.akamaized.net/newSiteIconsSprite_v42j.png");
+    background-position: -96px -478px;
+    display: inline-block;
+    width: 21px;
+    height: 21px;
+    margin: 3px 6px 0 3px;
+}
+.top, .alignTop {
+    vertical-align: top !important;
+}
+.overViewBox .left>*:not(.top), .overViewBox .current-data>*:not(.top) {
+    grid-column: 1/-1;
+}
+
+.overViewBox .left>DIV, .overViewBox .current-data>DIV {
+    display: inline-block;
+    vertical-align: top;
+}
+.inlineblock {
+    display: inline-block;
+}
+.bold {
+    font-weight: bold;
+}

@@ -1,0 +1,53 @@
+{{-- <script type="text/javascript">
+  var visitor = <?php echo $visitor; ?>;
+
+  google.charts.load('current', {'packages':['annotatedtimeline']});
+  google.charts.setOnLoadCallback(drawChart);
+  function drawChart() {
+    var data = google.visualization.arrayToDataTable(visitor);
+    
+    var options = {
+      title: '',
+      chart: {
+          height: 350,
+          type: 'area'
+        },
+      dataLabels: {
+          enabled: true
+        },
+      curveType: 'function',
+      crosshair: { 
+          trigger: 'focus',
+          opacity: 0.5,
+          color: '#000'
+        },
+      hAxis: {
+          title: 'Time',
+          titleTextStyle: {
+              color: '#333'
+            },
+          direction: 1,
+        },
+      vAxis: {
+          title: 'Price',
+          format:'$####',
+          titleTextStyle: {
+                color: '#333'
+            }
+        },
+        tooltip: {
+            hAxis: {
+            format: 'dd/MM/yy HH:mm'
+          },
+        },
+      
+      legend: { position: 'right' }
+      
+    };
+    var chart = new google.visualization.AreaChart(document.getElementById('chart_div'));
+    var dateFormatter = new google.visualization.DateFormat({
+        pattern: 'Y,M,d,H'
+    });
+    chart.draw(data, options);
+  }
+</script> --}}

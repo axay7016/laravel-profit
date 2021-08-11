@@ -1,0 +1,38 @@
+   <div id="chartContainer" style="height: 400px; width: 100%;"></div>
+<script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+<script type="text/javascript">
+  var options = {
+          series: [{
+          name: 'Price',
+          data: [31, 40, 28, 51, 42, 109, 100]
+        }
+        // , 
+        // {
+        //   name: 'series2',
+        //   data: [11, 32, 45, 32, 34, 52, 41]
+        // }
+        ],
+          chart: {
+          height: 350,
+          type: 'area'
+        },
+        dataLabels: {
+          enabled: false
+        },
+        stroke: {
+          curve: 'smooth'
+        },
+        xaxis: {
+          type: 'datetime',
+          categories: ["2021-09-19 18:00:00", "2021-09-19 17:00:00", "2021-09-19 16:00:00", "2021-09-19 15:00:00", "2021-09-19 14:00:00", "2021-09-19 13:00:00", "2021-09-19 12:00:00"]
+        },
+        tooltip: {
+          x: {
+            format: 'dd/MM/yy HH:mm'
+          },
+        },
+        };
+
+        var chart = new ApexCharts(document.querySelector("#chartContainer"), options);
+        chart.render();
+</script>
